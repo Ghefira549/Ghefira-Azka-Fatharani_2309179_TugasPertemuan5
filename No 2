@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg2309179_gefira.azka.fatharani_tugas5_no2;
+
+/**
+ *
+ * @author FARIZ
+ * 
+ */
+import java.util.Scanner;
+public class AzkaFatharani_Tugas5_No2 {
+
+    /**
+     * @param x
+     * @param y
+     * @return 
+     */
+    public static int Ganjil(int x, int y){
+       int jumlahGanjil=0;
+         for(int i=x; i<=y; i++){
+          if(i%2!=0){
+              System.out.println(i);
+             jumlahGanjil++;
+          } 
+         }
+        return jumlahGanjil;
+         
+    }
+    
+         
+    public static void main(String[] args) {
+         Scanner inputObjk =new Scanner(System.in);
+        System.out.print("Masukkan Batas Awal : ");
+        int x=inputObjk.nextInt();
+        System.out.print("Masukkan Batas Akhir : ");
+        int y=inputObjk.nextInt();
+        
+        int jumlah=Ganjil(x, y);
+        System.out.println("Jumlah Bilangan Ganjil :"+jumlah);
+    }
+   
+}
