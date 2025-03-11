@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg2309179_ghefira.azka.fatharani_tugas5_no3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class AzkaFatharani_Tugas5_No3 {
+
+    /**
+     * @param n
+     */
+      public static void hitungFaktorial(int n){
+       int faktorial=1;
+          for(int i=1; i<=n; i++){
+           faktorial=faktorial*i;
+       }
+        System.out.println(n+"!="+faktorial);
+       
+         
+    }
+    
+         
+    public static void main(String[] args) {
+           Scanner inputObjk =new Scanner(System.in);
+        System.out.print("Masukkan Nilai n: ");
+          int n=inputObjk.nextInt();
+        
+        hitungFaktorial(n);
+    
+    }
+    
+}
